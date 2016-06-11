@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width,height=device-height,user-scalable=no,maximum-scale=1" name="viewport"/>
+    <link href="todolist.css" rel="stylesheet">
+    <title>Todo List</title>
+</head>
+<body>
+    <div class="workArea">
+        <div class="title">
+            <h3>Todo List<span id="itemCount"></span> </h3>
+        </div>
+        <div class="tool">
+            <div class="filter"></div>
+            <div class="sort"></div>
+            <div class="search">
+                <input class="searchInput" placeholder="search items">
+            </div>
+        </div>
+        <div class="filter-opt">
+            <p class="option" id="All">All</p>
+            <p class="option" id="Completed">Completed</p>
+            <p class="option" id="Uncompleted">Uncompleted</p>
+        </div>
+        <div class="sort-opt">
+            <p class="option" id="Default">Default</p>
+            <p class="option" id="Date-asc">Date-asc</p>
+            <p class="option" id="Date-desc">Date-desc</p>
+            <p class="option" id="Flag">Flag</p>
+        </div>
+        <div class="newTodo">
+            <textarea class="newTodo_text" placeholder="input text here" rows="4"></textarea>
+            <div class="newTodo_btn">
+                <button id="submit">submit</button>
+                <button id="cancel">cancel</button>
+            </div>
+        </div>
+        <div class="items"></div>
+        <div class="footer">
+            <img src="img/plus.svg" id="add" alt="add">
+        </div>
+    </div>
+    <script src="lib/jquery-2.2.4.js"></script>
+    <script src="lib/jquery.mobile-1.4.5.js"></script>
+    <script src="lib/jquery.touchSwipe.min.js"></script>
+    <script src="js/model.js"></script>
+    <script src="js/provider-localStorage.js"></script>
+    <script src="todolist.js"></script>
+</body>
+</html>
